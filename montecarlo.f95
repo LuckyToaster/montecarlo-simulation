@@ -1,14 +1,11 @@
 program montecarlo_method
     implicit none
-    ! circle area = pi r**2
-    ! sqr area = 4**2
-    ! p (in circle) = A circle / A sqr = pi 2^2 / 4^2 = pi / 4
-    ! 4 basic types: integer, logical, real, character
-
-    ! assuming center of circle is p(0,0) ==> so x = rand(-2,2) and y = rand(-2,2)
+    ! P_(in circle) = Area circle / Area square = pi*2^2 / 4^2 = pi / 4
+    
+    ! assuming center of circle is p(0,0)
     ! (Xc,Yc) (Xp, Yp) 
     ! point (Xp, Yp) is inside circle if d < r & on the circle if d = r
-    ! save time by d^2 < r^2 for inside circle & d^2 = r^2 for on circle
+    ! this is equal to d^2 < r^2 for inside circle & d^2 = r^2 for on circle
     ! d^2= (Xp - Xc)^2 + (Yp - Yc) (and compare with r^2)
 
     integer :: k, i, inside_circle, outside_circle
