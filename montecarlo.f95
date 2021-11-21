@@ -29,7 +29,7 @@ program montecarlo_method
     inside_circle = 0
     outside_circle = 0
 
-    ! random number generation weidness
+    ! random number generation weirdness
     call date_and_time(VALUES=values)
     call random_seed(size=k)
     allocate(seed(k))
