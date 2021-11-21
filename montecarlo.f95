@@ -1,7 +1,6 @@
 program montecarlo_method
     implicit none
     ! P_(in circle) = Area circle / Area square = pi*2^2 / 4^2 = pi / 4
-    
     ! assuming center of circle is p(0,0)
     ! (Xc,Yc) (Xp, Yp) 
     ! point (Xp, Yp) is inside circle if d < r & on the circle if d = r
